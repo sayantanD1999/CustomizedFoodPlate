@@ -215,6 +215,17 @@ button {
     }
 }
 
+@media screen and (max-width: 320px) {
+    .container-fluid{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        width:100vh;
+    }
+    
+}
+
 .col-md-4 {
     color: white;
     padding-right: 0px !important;
@@ -229,7 +240,7 @@ button {
     padding-left: 0px !important;
     padding-right: 0px !important;
     margin-left: 0px !important;
-    margin-left: 0px !important;
+    margin-right: 0px !important;
     background-color: rgb(0, 0, 0, 0.66);
 }
 
@@ -281,7 +292,7 @@ button {
     padding-left: 0px !important;
     padding-right: 0px !important;
     margin-left: 0px !important;
-    margin-left: 0px !important;
+    margin-right: 0px !important;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -312,7 +323,7 @@ button {
     padding-left: 0px !important;
     padding-right: 0px !important;
     margin-left: 0px !important;
-    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
 
 #price {
@@ -566,11 +577,19 @@ a:hover {
     padding-left: 0px !important;
     padding-right: 0px !important;
     margin-left: 0px !important;
-    margin-left: 0px !important;
+    margin-right: 0px !important;
     height: 800px;
     overflow-y: scroll;
     display: none;
     border-top: none;
     color: blanchedalmond;
     background-color: rgb(0, 0, 0, 0.8);
+}
+
+
+#frontPage{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
