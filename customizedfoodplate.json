@@ -1,0 +1,170 @@
+[
+    {
+        "foodkind": "starter",
+        "foodtype": "veg",
+        "img": "pic/beguni.jpg",
+        "value": "Beguni",
+        "dataprice": "10"
+    },
+    {
+        "foodkind": "starter",
+        "foodtype": "veg",
+        "img": "pic/mocharchop.jpg",
+        "value": "Mochar chop",
+        "dataprice": "15"
+    },
+    {
+        "foodkind": "starter",
+        "foodtype": "non-veg",
+        "img": "pic/mc.jpg",
+        "value": "Macher Chop",
+        "dataprice": "30"
+    },
+    {
+        "foodkind": "starter",
+        "foodtype": "non-veg",
+        "img": "pic/ck.jpg",
+        "value": "Chicken Kebab",
+        "dataprice": "45"
+    },
+    {
+        "foodkind" : "starter",
+        "foodtype": "non-veg",
+        "img": "pic/cp.jpg",
+        "value": "Chicken Pakora",
+        "dataprice": "40"
+    },
+    {
+        "foodkind" : "starter",
+        "foodtype": "veg",
+        "img": "pic/paneer-pakoda.jpg",
+        "value": "Paneer Pakora",
+        "dataprice": "30"
+    },
+    {
+        "foodkind" : "starter",
+        "foodtype": "non-veg",
+        "img": "pic/ff.jpg",
+        "value": "Fish Fry",
+        "dataprice": "70"
+    },
+    {
+        "foodkind" : "starter",
+        "foodtype": "veg",
+        "img": "pic/at.jpg",
+        "value": "Alu Tikki",
+        "dataprice": "25"
+    },
+    {
+        "foodkind" : "maincourse",
+        "foodtype": "non-veg",
+        "img": "pic/fishcurry.jpg",
+        "value": "Fish Curry",
+        "dataprice": "80"
+    },
+    {
+        "foodkind" : "maincourse",
+        "foodtype": "non-veg",
+        "img": "pic/muttonbiryani.jpg",
+        "value": "Mutton Biryani",
+        "dataprice": "220"
+    },
+    {
+        "foodkind" : "maincourse",
+        "foodtype": "non-veg",
+        "img": "pic/chickenbiryani.jpg",
+        "value": "Chicken Biryani",
+        "dataprice": "180"
+    },
+    {
+        "foodkind" : "maincourse",
+        "foodtype": "veg",
+        "img": "pic/noodles.jpg",
+        "value": "Noodles",
+        "dataprice": "140"
+    },
+    {
+        "foodkind" : "maincourse",
+        "foodtype": "veg",
+        "img": "pic/friedrice.jpg",
+        "value": "Fried Rice",
+        "dataprice": "80"
+    },
+    {
+        "foodkind" : "maincourse",
+        "foodtype": "veg",
+        "img": "pic/rice.jpg",
+        "value": "Rice",
+        "dataprice": "80"
+    },
+    {
+        "foodkind" : "maincourse",
+        "foodtype": "non-veg",
+        "img": "pic/butterchicken.jpg",
+        "value": "Butter Chicken",
+        "dataprice": "100"
+    },
+    {
+        "foodkind" : "maincourse",
+        "foodtype": "veg",
+        "img": "pic/polau.jpg",
+        "value": "Polau",
+        "dataprice": "110"
+    },
+    {
+        "foodkind" : "desert",
+        "foodtype": "veg",
+        "img": "pic/kulfi.jpg",
+        "value": "Kulfi",
+        "dataprice": "30"
+    },
+    {
+        "foodkind" : "desert",
+        "foodtype": "veg",
+        "img": "pic/kheer.jpg",
+        "value": "Kheer",
+        "dataprice": "35"
+    },
+    {
+        "foodkind" : "desert",
+        "foodtype": "veg",
+        "img": "pic/barfi.jpg",
+        "value": "Barfi",
+        "dataprice": "15"
+    },
+    {
+        "foodkind" : "desert",
+        "foodtype": "veg",
+        "img": "pic/chatni.jpg",
+        "value": "Mango-Chatni",
+        "dataprice": "30"
+    },
+    {
+        "foodkind" : "desert",
+        "foodtype": "veg",
+        "img": "pic/rosogolla.jpg",
+        "value": "Rosogolla",
+        "dataprice": "10"
+    },
+    {
+        "foodkind" : "desert",
+        "foodtype": "veg",
+        "img": "pic/icecream.jpg",
+        "value": "Ice Cream",
+        "dataprice": "35"
+    },
+    {
+        "foodkind" : "desert",
+        "foodtype": "veg",
+        "img": "pic/paan.jpg",
+        "value": "Paan",
+        "dataprice": "10"
+    },
+    {
+        "foodkind" : "desert",
+        "foodtype": "veg",
+        "img": "pic/gulabjamun.jpg",
+        "value": "Gulab Jamun",
+        "dataprice": "15"
+    }
+]

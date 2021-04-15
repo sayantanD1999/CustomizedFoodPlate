@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="customizedfoodplate.css">
+    <script src="customizedfoodplate.js"></script>
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b8625aff4c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="customizedfoodplate.js"></script>
+    <title>Customized Food Plate </title>
+
+</head>
+
+
+<body data-spy="scroll">
+    <div class="container-fluid" style="padding-left: 0; padding-right: 0;">
+        <div id="order_table" style="display: none;">
+            <span onclick="closediv()" class="close" title="Close Modal">&times;</span>
+            <h2>Starter</h2>
+            <table id="tab1" class="table">
+                <tr>
+                    <th>Item</th>
+                    <th>Price (Unit)</th>
+                    <th>Quantity</th>
+                    <th>Total price</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <br>
+            <h2>Maincourse</h2>
+            <table id="tab2" class="table2">
+                <tr>
+                    <th>Item</th>
+                    <th>Price (Unit)</th>
+                    <th>Quantity</th>
+                    <th>Total price</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <br>
+            <h2>Desert</h2>
+            <table id="tab3" class="table3">
+                <tr>
+                    <th>Item</th>
+                    <th>Price (Unit)</th>
+                    <th>Quantity</th>
+                    <th>Total price</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <br><br>
+            <h2 id="total" style="text-align:center;"></h2>
+        </div>
+        <div id="frontPage">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="text">
+                        <h1>
+                            Welcome to the <br> <span id="heading">Customized Food Web
+                                Application</span>
+                        </h1>
+                        <br><br>
+                        <p class="description">
+                            Here you can select your own choice of food items
+                            to decorate the food plates for your esteemed
+                            guests. You can make changes according to your choice.
+                            We are providing varied choice of dishes in all
+                            types with different of range of prices.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages, and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.
+                        </p>
+                        <br>
+                        <a href="#inputDetailBox"><button class="btn1"  onclick="getStarted()">Let's Get Started</button></a>
+                    </div>
+
+
+                </div>
+                <div class="col-md-6" id="imageslide">
+                    <div class="image fade">
+                        <img src="pic/landingpage.png" style="height:100%; width: 95%;" alt="">
+                    </div>
+                    <div class="image fade">
+                        <img src="pic/landingpage2.png" style="height:100%; width: 95%;" alt="">
+                    </div>
+                    <div class="image fade">
+                        <img src="pic/landingpage3.png" style="height:100%; width: 95%;" alt="">
+                    </div>
+                    <div class="image fade">
+                        <img src="pic/landingpage4.png" style="height:100%; width: 95%;" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <section id="inputDetailBox">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="pic/undraw_breakfast_psiw.png" id="animate" style="height: 70%; width: 70%;" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="plates">
+                            <h3>Enter number of plates</h3>
+                            <button id="ipButton" onclick="decrement()"><i class="fas fa-minus"></i></button>
+                            <input placeholder="No of plates" type=number value="0" id="heads" min="0">
+                            <button id="ipButton" onclick="increment()"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <div style="width: 50%; margin: auto;">
+                <input type="text" id="ipSearch" placeholder="Search different dishes"></input>
+            </div> -->
+            <br><br><br>
+
+
+
+            <div id="tab" class="nav nav-tabs">
+                <button data-toggle="tab" href="#starters" class="active" >Starters</button>
+                <button data-toggle="tab" href="#maincourse">Maincourse</button>
+                <button data-toggle="tab" href="#desert">Desert</button>                
+                <!-- <li class="active"><a data-toggle="tab" href="#starters">Starters</a></li>
+                <li><a data-toggle="tab" href="#maincourse">Maincourse</a></li>
+                <li><a data-toggle="tab" href="#desert">Desert</a></li> -->
+                </div>
+            <div class="tab-content">
+                <div id="starters" class="tab-pane active tabContentStarter tabcontent ">
+                    <div class="head-content" >
+                        <h1 class="tabHeading" style="text-align: left;">Starters</h1>
+                            <div class="searchContainer">
+                                <i class="fa fa-search searchIcon"></i>
+                                <input id="ip1" class="ipsearch" type="search" name="search" placeholder="Search...">
+                            </div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Filters
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <p class="dropdown-item">Price</p>
+                                    <p class="dropdown-item"><input type="checkbox"
+                                            onclick="veg(this,'contents-starter')" id="veg">
+                                        Veg</input></p>
+                                    <p class="dropdown-item"><input type="checkbox" onclick="nonveg(this)"
+                                            id="non-veg">
+                                        Non-Veg</input></p>
+                                    <p class="dropdown-item"><input type="checkbox" onclick="lowtohigh(this)"
+                                            id="lh">
+                                        Low to high</input></p>
+                                    <p class="dropdown-item"><input type="checkbox" onclick="hightolow(this)"
+                                            id="hl">
+                                        High to low</input></p>
+                                </div>
+                            </div>
+                    </div>
+                    <div id="contents-starter" class="contents row container-fluid">
+                    </div>
+                </div>
+                <div id="maincourse" class="tab-pane tabContentMaincourse tabcontent">
+                    <div class="head-content">
+                        <h1 class="tabHeading" style="text-align: left;">Maincourse</h1>
+                        <div class="searchContainer">
+                            <i class="fa fa-search searchIcon"></i>
+                            <input id="ip2" class="ipsearch" type="search" name="search" placeholder="Search...">
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Filters
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <p class="dropdown-item">Price</p>
+                                <p class="dropdown-item"><input type="checkbox"
+                                        onclick="veg(this,'contents-starter')" id="veg">
+                                    Veg</input></p>
+                                <p class="dropdown-item"><input type="checkbox" onclick="nonveg(this)"
+                                        id="non-veg">
+                                    Non-Veg</input></p>
+                                <p class="dropdown-item"><input type="checkbox" onclick="lowtohigh(this)"
+                                        id="lh">
+                                    Low to high</input></p>
+                                <p class="dropdown-item"><input type="checkbox" onclick="hightolow(this)"
+                                        id="hl">
+                                    High to low</input></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contents-maincourse" class="contents row container-fluid">
+                    </div>
+                </div>
+                <div id="desert" class="tab-pane tabContentDesert tabcontent">
+                    <div class="head-content">
+                        <h1 class="tabHeading" style="text-align: left;">Desert</h1>
+                        <div class="searchContainer">
+                            <i class="fa fa-search searchIcon"></i>
+                            <input id="ip3" class="ipsearch" type="search" name="search" placeholder="Search...">
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Filters
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <p class="dropdown-item">Price</p>
+                                <p class="dropdown-item"><input type="checkbox"
+                                        onclick="veg(this,'contents-starter')" id="veg">
+                                    Veg</input></p>
+                                <p class="dropdown-item"><input type="checkbox" onclick="nonveg(this)"
+                                        id="non-veg">
+                                    Non-Veg</input></p>
+                                <p class="dropdown-item"><input type="checkbox" onclick="lowtohigh(this)"
+                                        id="lh">
+                                    Low to high</input></p>
+                                <p class="dropdown-item"><input type="checkbox" onclick="hightolow(this)"
+                                        id="hl">
+                                    High to low</input></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contents-desert" class="contents row container-fluid">
+                    </div>
+                </div>
+            </div>
+            <br><br>
+
+            <div id="buttonsContainer">
+                <button class="btn btn-primary" id="but1" onclick="addtoplate()">Add to plate</button>
+                <button class="btn btn-primary" id="but2" disabled onclick="showplate()">Show Plate</button>
+                <button class="btn btn-primary" onclick="discardplate()">Discard Plate</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("image");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+
+            slides[slideIndex - 1].style.display = "block";
+
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+</html>
